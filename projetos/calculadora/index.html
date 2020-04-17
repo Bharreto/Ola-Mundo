@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Cédulas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="input-group">
+        <label>R$ 100</label>
+        <input v-model="c100" type="number" />
+        <span>R${{rc100}}</span>
+      </div>
+      <div class="input-group">
+        <label>R$ 50</label>
+        <input v-model="c50" type="number" />
+        <span>R$ {{rc50}}</span>
+      </div>
+      <div class="input-group">
+        <label>R$ 20</label>
+        <input v-model="c20" type="number" />
+        <span>R$ {{rc20}}</span>
+      </div>
+      <div class="input-group">
+        <label>R$ 10</label>
+        <input v-model="c10" type="number" />
+        <span>R$ {{rc10}}</span>
+      </div>
+      <div class="input-group">
+        <label>R$ 5</label>
+        <input v-model="c5" type="number" />
+        <span>R$ {{rc5}}</span>
+      </div>
+      <div class="input-group">
+        <label>R$ 2</label>
+        <input v-model="c2" type="number" />
+        <span>R$ {{rc2}}</span>
+      </div>
+      <div class="input-group">
+        <label>R$ 1</label>
+        <input v-model="m1" type="number" />
+        <span>R$ {{rm1}}</span>
+      </div>
+      <div class="input-group">
+        <label>R$ 0,50</label>
+        <input v-model="m050" type="number" />
+        <span>R$ {{rm050}}</span>
+      </div>
+      <div class="input-group">
+        <label>R$ 0,25</label>
+        <input v-model="m025" type="number" />
+        <span>R$ {{rm025}}</span>
+      </div>
+      <div class="input-group">
+        <label>R$ 0,10</label>
+        <input v-model="m010" type="number" />
+        <span>R$ {{rm010}}</span>
+      </div>
+      <div class="input-group">
+        <label>R$ 0,05</label>
+        <input v-model="m05" type="number" />
+        <span>R$ {{rm05}}</span>
+      </div>
+      <h1>R$ {{soma}}</h1>
+    </div>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
